@@ -7,7 +7,7 @@
     padding: 0;
 }
 
-header li, a, button {
+header li, a, .top-btn {
     font-family: 'Montserrat Alternates', sans-serif;
     font-weight: 500;
     font-size: 18px;
@@ -37,7 +37,7 @@ h2 {
     color: #53A548;
 }
 
-button {
+header .top-btn {
     margin-left: 25px;
     padding: 9px 25px;
     background-color: rgba(83, 165, 72, 1);
@@ -47,7 +47,7 @@ button {
     transition: all 0.3 ease 0s;
 }
 
-button:hover {
+header .top-btn:hover {
     background-color: rgba(83, 165, 72, 0.8);
 }
 
@@ -93,16 +93,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    display: inline-block;
     padding: 20px 20px;
     margin: 20px 20px;
 } 
 
 .skill-content ul {
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
 } 
 
 /* icons */
@@ -121,13 +120,13 @@ footer {
     font-family: 'Montserrat Alternates', sans-serif;
     font-weight: 500;
     font-size: 18px;
-    position: absolute;
+    position: flex;
     bottom: 0;
     left: 0;
     right: 0;
     background-color: #050505;
     height: auto;
-    width: 100vw;
+    width: 100%;
     padding-top: 40px;
     color: #FFFFFF;
 }
@@ -141,7 +140,7 @@ footer {
 }
 
 .footer-content h3 {
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 500;
     text-transform: capitalize;
     line-height: 3rem;
@@ -152,7 +151,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 1rem 0 3rem 0;
+    margin: 2rem 0 2rem 0;
 }
 
 .socials li {
@@ -163,7 +162,7 @@ footer {
     text-decoration: none;
     color: #FFFFFF;
     border: 1.1px solid #FFFFFF;
-    padding: 5px;
+    padding: 6px;
     border-radius: 50%;
 }
 
@@ -180,7 +179,19 @@ footer {
 .footer-bottom {
     background-color: #000000;
     color: #FFFFFF;
-    width: 100vw;
+    width: 100%;
     text-align: center;
     padding: 20px 0;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bottom span {
+    text-transform: uppercase;
+    opacity: .5;
+    font-weight: 200;
 }
