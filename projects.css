@@ -1,4 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
+/* about */ 
+ 
+.about-content   {
+    padding: 30px;
+    margin: 30px;
+}
+
+.about-content h2, p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-content h2 {
+    margin-bottom: 15px;
+}
 
 /* project content */
 
@@ -41,24 +57,20 @@
     padding: 30px 0px 0px 0px;
 }
 
-.btn-send {
-    width: 100;
-    padding: 9px 25px;
+input[type=submit] {
     background-color: rgba(83, 165, 72, 1);
+    font-size: 18px;
     border: none;
     border-radius: 50px;
+    color: #ffffff;
+    padding: 9px 25px;
+    text-decoration: none;
+    margin: 30px 200px;
     cursor: pointer;
-    transition: all 0.3 ease 0s;
 }
 
-.btn-send:hover {
+input[type=submit]:hover {
     background-color: rgba(83, 165, 72, 0.8);
-}
-
-.full-content button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .contact-content form {
@@ -81,4 +93,5 @@
 .textarea-field {
     height: 150px;
     padding-top: 10px;
+    resize: none;
 }
