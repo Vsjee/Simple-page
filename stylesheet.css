@@ -105,6 +105,16 @@ body {
     padding: 20px;
 } 
 
+/* icons */
+
+#Layer_java_icon {
+    width: 100px;
+}
+
+#Layer_html_icon {
+    width: 100px;
+}
+
 /* footer */
 
 footer {
