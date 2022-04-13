@@ -7,7 +7,7 @@
     padding: 0;
 }
 
-header h2, li, a, button {
+header li, a, button {
     font-family: 'Montserrat Alternates', sans-serif;
     font-weight: 500;
     font-size: 18px;
@@ -16,7 +16,7 @@ header h2, li, a, button {
 }
 
 h2 {
-    font-size: 20px;
+    font-size: 25px;
     margin-right: auto;
 }
 
@@ -57,7 +57,7 @@ header {
     align-items: center;
     background-color: #000000;
     color: #FFFFFF;
-    padding: 30px 15%;
+    padding: 15px 30px;
 }
 
 ul {
@@ -75,6 +75,35 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
+
+.skill-content {
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 20px 15%;
+}
+
+.skill-content h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.skill-content li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+    padding: 20px 20px;
+    margin: 20px 20px;
+} 
+
+.skill-content ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+} 
 
 /* footer */
 
