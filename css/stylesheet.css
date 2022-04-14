@@ -72,7 +72,7 @@ header {
     padding: 2px 30px;
 }
 
-/* body */
+/*** body ***/
 
 body {
     font-family: 'Montserrat Alternates', sans-serif;
@@ -80,6 +80,68 @@ body {
     display: flex;
     flex-direction: column;
 }
+
+.about-content {
+	border: 2px solid rgba(0, 0, 0, 0);
+	outline: none;
+	background-color: rgba(230, 230, 230, 0.6);
+	padding: 1rem 1rem;
+	font-size: 1.1rem;
+    margin: 20px;
+    border-radius: 50px;
+	background-color: #fff;
+	box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+}
+
+.about-content svg {
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.about-content p {
+    margin: 30px;
+}
+
+.line {
+    position: relative;
+    font-size: 18px;
+    font-family: monospace;
+}
+
+.line::before,
+.line::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.line::before {
+    background: #FFFFFF;
+    animation: typewriter 6s steps(100) forwards;
+}
+
+@keyframes typewriter {
+    to { 
+        left: 100%; 
+    }
+}
+
+#avatar_1 {
+    margin: 0;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding: 0;
+    width: 100px;
+    height: 100px;
+}
+
+/* skills content*/
 
 .skill-content {
     background-color: #000000;
@@ -139,7 +201,6 @@ footer {
 
 .footer-content {
     display: flex;
-    align-items: center;
     justify-content: center;
     flex-direction: column;
     text-align: center;
@@ -194,4 +255,26 @@ footer {
     text-transform: uppercase;
     opacity: .5;
     font-weight: 200;
+}
+
+/* go top btn */
+.goTopBtn {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    background:#000000;
+    bottom: 20px;
+    right: 20px;
+    text-decoration: none;
+    border-radius: 50%;
+    
+    text-align: center;
+    align-items: center;
+    
+    color: #FFFFFF;
+    font-size: 30px;
+}
+
+.goTopBtn:hover {
+    color: #53A548;
 }
