@@ -8,7 +8,7 @@
     padding: 0;
 }
 
-header li, a, .top-btn {
+header li, a, button {
     font-family: 'Montserrat Alternates', sans-serif;
     font-weight: 500;
     font-size: 18px;
@@ -21,17 +21,28 @@ h2 {
     margin-right: auto;
 }
 
+nav {
+    padding-right: 0px;
+}
+
 .nav_links {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .nav_links li {
     display: inline-block;
-    padding: 0px 20px;
+    padding: 0px 10px;
 }
 
 .nav_links li a {
     transition: all 0.3 ease 0s;
+}
+
+.nav_links a {
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
 .nav_links li a:hover {
@@ -58,13 +69,7 @@ header {
     align-items: center;
     background-color: #000000;
     color: #FFFFFF;
-    padding: 15px 30px;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+    padding: 2px 30px;
 }
 
 /* body */
@@ -74,7 +79,6 @@ body {
     color: #000000;
     display: flex;
     flex-direction: column;
-
 }
 
 .skill-content {
@@ -98,9 +102,12 @@ body {
 
 .skill-content ul {
     display: grid;
-    gap: 0.5rem;
+    gap: 1rem;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    padding-left: 0;
     grid-auto-rows: 8rem;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
 } 
 
 /* icons */
@@ -118,7 +125,7 @@ body {
 footer {
     font-family: 'Montserrat Alternates', sans-serif;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 15px;
     position: flex;
     bottom: 0;
     left: 0;
@@ -126,7 +133,7 @@ footer {
     background-color: #050505;
     height: auto;
     width: 100%;
-    padding-top: 40px;
+    padding-top: 30px;
     color: #FFFFFF;
 }
 
@@ -138,19 +145,12 @@ footer {
     text-align: center;
 }
 
-.footer-content h3 {
-    font-size: 1.6rem;
-    font-weight: 500;
-    text-transform: capitalize;
-    line-height: 3rem;
-}
-
 .socials {
     list-style: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 2rem 0 2rem 0;
+    margin: 1rem 40px 1rem 0;
 }
 
 .socials li {
@@ -180,17 +180,17 @@ footer {
     color: #FFFFFF;
     width: 100%;
     text-align: center;
-    padding: 20px 0;
+    padding: 0;
 }
 
 .footer-bottom p {
-    font-size: 14px;
-    word-spacing: 2px;
+    font-size: 10px;
+    word-spacing: 1px;
     text-transform: capitalize;
 }
 
 .footer-bottom span {
-    padding-left: 10px;
+    padding-left: 2px;
     text-transform: uppercase;
     opacity: .5;
     font-weight: 200;
