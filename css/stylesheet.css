@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
 
 * {
+    font-family: 'Montserrat Alternates', sans-serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -97,9 +98,9 @@ body {
 
 .skill-content ul {
     display: grid;
-    gap: 1rem;
-    grid-auto-rows: 10rem;
-    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap: 0.5rem;
+    grid-auto-rows: 8rem;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
 } 
 
 /* icons */
